@@ -1,0 +1,46 @@
+print("Welcome to my first game")
+name = input("What is your name? ")
+age = input("What is your age? ")
+
+print("Hello", name, "you are", age, "years old" )
+
+health = 100
+
+print("you have", health, "health points")
+
+if int(age) >= 18:
+  print("You are old enough")
+else:
+  print("ACCESS DENIED")
+
+wants_to_play = input("Do you want to play? ").lower()
+
+if wants_to_play == "yes":
+  print("TIME TO PLAY THE GAME! ")
+else:
+  print("Goodbye")
+
+left_or_right = input("Which is the way? (left/right) ").lower()
+
+if left_or_right == "left":
+  ans = input("Excellent choice, you have made it to the pond.. do you swim over the pond or jump across it? (swim/jump?)")
+else:
+  print("you fell down in to a booby trap and died")
+  if swim_or_jump == "swim":
+    print("not a good choice, a eel electrocuted you and you lost 50 health")
+  else:
+    print("good choice, you made it to the other side")
+    health -= 50
+
+  if health <= 0:
+    print("you have no health left... GAME OVER")
+  else:
+    print("you have survived")
+
+  ans = input("You notice a house and a bridge, which one do you choose? (house/bridge)")
+
+  if ans == 'house':
+    print("well done you have won the treasure of the game")
+
+  elif ans == 'bridge':
+    print("the bridge collapsed and you lose 50 health")
